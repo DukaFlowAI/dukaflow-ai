@@ -1,0 +1,59 @@
+name: Bug report
+description: Report unexpected DukaFlow AI behavior
+title: "[BUG] "
+labels:
+  - bug
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Clearly explain what went wrong.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Go to...
+        2. Click...
+        3. Observe...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+
+  - type: input
+    id: branch
+    attributes:
+      label: Branch or commit
+      description: Provide the branch name or commit hash when known.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected workstream
+      options:
+        - Backend
+        - Frontend
+        - AI service
+        - Database
+        - DevOps
+        - Documentation
+        - Unknown
+    validations:
+      required: true
