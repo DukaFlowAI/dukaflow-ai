@@ -1,0 +1,67 @@
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+
+# Java / Spring Boot
+backend/target/
+*.class
+*.jar
+*.war
+*.ear
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Node / React
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/.vite/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Python / FastAPI
+ai-service/.venv/
+ai-service/venv/
+ai-service/__pycache__/
+ai-service/.pytest_cache/
+ai-service/.mypy_cache/
+ai-service/.ruff_cache/
+*.py[cod]
+*.pkl
+*.joblib
+
+# Test and coverage output
+coverage/
+htmlcov/
+.coverage
+*.lcov
+test-results/
+
+# IDEs and editors
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+*.iml
+
+# Operating systems
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs and temporary files
+logs/
+*.log
+tmp/
+temp/
+
+# Database and local volumes
+mysql-data/
+*.sqlite
+*.sqlite3
